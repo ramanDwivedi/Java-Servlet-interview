@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>servletapp03</display-name>
+	<context-param>
+	<param-name>a</param-name>
+	<param-value>apple</param-value>
+	</context-param>
+	<context-param>
+	<param-name>b</param-name>
+	<param-value>bombay</param-value>
+	</context-param>
+	<servlet>
+		<servlet-name>ServletApp03</servlet-name>
+		<servlet-class>com.servletapp03.servlet.ServletApp03</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletApp03</servlet-name>
+		<url-pattern>/context</url-pattern>
+	</servlet-mapping>
+</web-app>
