@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>servletapp04</display-name>
+  <context-param>
+  <param-name>a</param-name>
+  <param-value>aaa</param-value>
+  </context-param>
+  <context-param>
+  <param-name>b</param-name>
+  <param-value>bbb</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>ServletEx1</servlet-name>
+    <servlet-class>com.servletcontectapp.ServletEx1</servlet-class>
+    <init-param>
+    <param-name>c</param-name>
+    <param-value>ccc</param-value>
+    </init-param>
+    <init-param>
+    <param-name>d</param-name>
+    <param-value>ddd</param-value>
+    </init-param>
+    </servlet>
+    <servlet>
+    <servlet-name>ServletEx02</servlet-name>
+      <servlet-class>com.servletcontectapp.ServletEx02</servlet-class>
+    </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletEx1</servlet-name>
+    <url-pattern>/ex1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>ServletEx02</servlet-name>
+  <url-pattern>/ex02</url-pattern>
+  </servlet-mapping>
+</web-app>
